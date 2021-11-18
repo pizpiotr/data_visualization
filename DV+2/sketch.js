@@ -24,10 +24,15 @@ function setup() {
 
 function draw() {
   translate(windowWidth/2, windowHeight/2); 
+  push();
+  angleMode(DEGREES);
+  rotate(-9);
+  writeText();
   drawLines_fut();
   drawCircles();
   drawLines();
-  writeText();
+  
+  pop();
   description();  
   console.log(klarheit);
   noLoop();
@@ -94,37 +99,47 @@ function writeText(){
   for( let i=0; i < RowC; i++){
    
 
-  let meanTemp = table.get(i, 'future_Annual_Mean_Temperature');
-  let meanactTemp = table.get(i, 'Annual_Mean_Temperature');
-  var citName = table.get(i, 'current_city');
-  
-  var lineLength = map(meanTemp,2,25,30,250);
-  var pos = createVector(lineLength,lineLength);
+    let meanTemp = table.get(i, 'future_Annual_Mean_Temperature');
+    let meanactTemp = table.get(i, 'Annual_Mean_Temperature');
+    var citName = table.get(i, 'current_city');
+    
+    var lineLength = map(meanTemp,2,25,30,250);
+    var pos = createVector(lineLength*1.5,lineLength*1.5);
 
-  angleMode(DEGREES);
-   
-  
-  
-  
-  rotate(360/RowC);
-  textFont(klarheit);
-  textSize(20);
-  text(citName,pos.x,pos.y); 
-
-  console.log(pos);
+    angleMode(DEGREES);
+    
+    
+    
+    
+    rotate(360/RowC);
+    stroke(0,0,0);
+    line(0, 0, pos.x, pos.y);
+    push();
+    translate(pos.x, pos.y);
+    rotate(i*(-360/RowC));
+    
+    textFont(klarheit);
+    textSize(20);
+    fill(0,0,0);
+    text(citName,0,0); 
+    
+    pop();
+    console.log(pos);
   
   }
+  
 }
   
 
 
 
 function description(){
+  
   textFont(klarheit);
   textSize(20);
  
   fill(0,0,0);
-  text('Annual Mean Temperatur5', -500,300);
+  text('Annual Mean Temperature', -500,300);
   circle(-520, 292, 20);
 
  
@@ -132,6 +147,8 @@ function description(){
   fill(0,0,0);
   text('Future Annual Mean Temperature', -500,330);
   fill(255,111,97);
+  noStroke();
   circle(-520, 322, 20);
-
+  angleMode(DEGREES);
+  
 }
