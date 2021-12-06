@@ -1,0 +1,66 @@
+[
+    {
+        "datatype": "Ljubljana",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000,
+                "text_location": 100
+        }
+     },
+     {
+        "datatype": "Belgrad",
+        "data": {
+                "test_data1": 500,
+                "test_data2": 200,
+                "text_location": 100
+        }
+     },
+     {
+        "datatype": "Budapest",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000,
+                "text_location": 100
+        }
+     },
+     {
+        "datatype": "Zurich",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000,
+                "text_location": 100
+        }
+     },
+     {
+        "datatype": "New York",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000,
+                "text_location": 100
+        }
+     },
+     {
+        "datatype": "Gossau",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000,
+                "text_location": 100
+        }
+     },
+     {
+        "datatype": "Mammals Richness",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000,
+                "text_location": 100
+        }
+     },
+     {
+        "datatype": "Bird Richness",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000,
+                "text_location": 100
+        }
+     }
+]

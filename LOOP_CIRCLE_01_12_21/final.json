@@ -1,0 +1,58 @@
+[
+    {
+        "datatype": "Ljubljana",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000
+        }
+     },
+     {
+        "datatype": "Belgrad",
+        "data": {
+                "test_data1": 500,
+                "test_data2": 200
+        }
+     },
+     {
+        "datatype": "Budapest",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000
+        }
+     },
+     {
+        "datatype": "Zurich",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000
+        }
+     },
+     {
+        "datatype": "New York",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000
+        }
+     },
+     {
+        "datatype": "Gossau",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000
+        }
+     },
+     {
+        "datatype": "Gossau",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000
+        }
+     },
+     {
+        "datatype": "Gossau",
+        "data": {
+                "test_data1": 2000,
+                "test_data2": 1000
+        }
+     }
+]

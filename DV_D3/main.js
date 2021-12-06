@@ -84,7 +84,7 @@ async function init() {
       return value.annualMeanTemp * heightScalingFactor;
     })
     .attr('data-city', (value, index) => {
-      return `Temperature of ${value.city}: ${value.annualMeanTemp}° C`;
+      return `Temperature of ${value.city}, ${value.annualMeanTemp}° C`;
     });
 
   // adding another DOM node for each data member
